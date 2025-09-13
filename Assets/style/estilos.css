@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Noto Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: capitalize;
+  background-image: url(../img/home_fondo.png);
+  background-size: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  align-items: center;
+}
+header .paginas {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+header .paginas li a {
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2874A6;
+  transition: transform 0.5s ease-in-out;
+}
+header .paginas li a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.4);
+}
+header .redes {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+header .redes li {
+  text-decoration: none;
+}
+header .redes li img {
+  max-width: 20px;
+  filter: contrast(0.5);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+main .titulo_enlace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .titulo_enlace img {
+  max-width: 90vh;
+  width: 100%;
+}
+main .titulo_enlace a {
+  text-decoration: none;
+  color: #FAFAFA;
+  font-weight: bold;
+  background-color: #154360;
+  padding: 15px;
+  margin-top: -50px;
+  transition: transform 0.5s ease-in-out;
+}
+main .titulo_enlace a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1) contrast(1.1) saturate(1.1);
+}
+
+.home2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAFAFA;
+  background-size: cover;
+}
+.home2 ul {
+  display: flex;
+  list-style: none;
+  margin: 20px;
+}
+.home2 ul li {
+  padding: 20px;
+}
+.home2 ul li img {
+  width: 40vh;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=estilos.css.map */

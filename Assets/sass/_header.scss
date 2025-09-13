@@ -1,0 +1,43 @@
+@use "variables" as v;
+
+header{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px;
+    align-items: center;
+
+    .paginas{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        
+        li{
+            a{
+                display: inline-block;
+                font-size: 1rem;
+                text-decoration: none;
+                font-weight: bold;
+                color: v.$colorheader2;
+                transition: transform 0.5s ease-in-out;
+                &:hover{
+                    transform:
+                    scale(1.1);
+                    filter: brightness(1.4);
+                }
+            }
+        }
+    }
+
+    .redes{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        li{
+            text-decoration: none;
+                img{
+                    max-width: 20px;
+                    filter: contrast(0.5);
+                }
+            }
+        }
+    }

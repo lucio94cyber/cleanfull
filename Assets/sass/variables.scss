@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$colorheader1:#5DADE2;
+$colorheader2:#2874A6;
+$colorheader3:#154360;
+$colorheader4:#FAFAFA;
+*{
+    font-family: "Noto Sans";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-transform:capitalize;
+    background-image: url(../img/home_fondo.png);
+    background-size: 100%;
+}

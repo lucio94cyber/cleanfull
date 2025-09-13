@@ -1,0 +1,58 @@
+@use "variables" as v;
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+
+    .titulo_enlace{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{ 
+            max-width: 90vh;
+            width: 100%;
+        }
+
+        a{
+            text-decoration: none;
+            color: v.$colorheader4;
+            font-weight: bold;
+            background-color: v.$colorheader3;
+            padding:15px;
+            margin-top: -50px;
+            transition: transform 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+                filter: brightness(1.1)contrast(1.1)
+                saturate(1.1);
+            }
+        }
+}
+}
+
+.home2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$colorheader4;
+    background-size: cover;
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 20px;
+        li{
+            padding: 20px;
+            
+            img{
+                width: 40vh;
+                object-fit: cover;
+                h2{
+                    font-size: 1rem;
+
+                }
+            }
+        }
+    }
+}
