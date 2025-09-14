@@ -1,1 +1,28 @@
 @use "variables" as v;
+
+footer{
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    .footer_redes{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+
+        li{
+            
+            a{
+                img{
+                    max-width: 20px;
+
+                }
+            }
+
+        }
+
+    }
+
+}
