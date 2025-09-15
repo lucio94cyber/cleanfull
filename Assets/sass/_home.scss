@@ -136,23 +136,23 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, v.$colorheader3, v.$colorheader4, v.$colorheader2, v.$colorheader1);
+    background:linear-gradient(134deg, v.$colorheader3, v.$colorheader4, v.$colorheader2, v.$colorheader1);
     background-size: 200% 200%;
     animation: gradiente 5s infinite alternate;
     .promocion_texto{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        border: 2px solid #a7d2f1;
+        border: 2px solid #f3f5f7;
         padding: 20px;
         margin: 10px;
         
         h4{
             font-size: 2.2rem;
-            font-weight: 900;
-            color: #0056D2; /* 🔥 Naranja vibrante */
-            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); /* Brillo sutil */
-            letter-spacing: 1px; /* Espaciado para verse más pro */
+            font-weight: 300;
+            color: v.$colorheader4;
+            text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); /* Brillo sutil */
+            letter-spacing: 0.5px; /* Espaciado para verse más pro */
 
         }
         p{
@@ -163,7 +163,7 @@ main{
         }
         a{
             display: inline-block; /* Para que se comporte como botón */
-            background-color: v.$colorheader1; /* Color de fondo */
+            background-color: v.$colorboton1;
             color: v.$colorheader4; /* Texto en blanco */
             padding: 10px 20px; /* Espaciado interno */
             font-weight: bold;
@@ -171,7 +171,7 @@ main{
             max-width: 250px;
             transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
             &:hover{
-                background-color: v.$colorheader2; 
+                background-color: v.$colorboton2; 
                 transform: scale(1.05);
             }
         }
@@ -182,7 +182,7 @@ main{
         align-items: center;
         li{
             img{max-width: 250px;
-
+                animation: movimiento 1s infinite alternate ease-in-out;
             }
         }
     }
@@ -195,5 +195,18 @@ main{
     }
     to{
         background-position: 100% 50%;
+    }
+}
+
+@keyframes movimiento{
+    from{
+        transform: translateX(0);
+        transform: scale(1);
+
+    }
+    to{
+        transform: translateX(10px);
+        transform: scale(1.1);
+
     }
 }

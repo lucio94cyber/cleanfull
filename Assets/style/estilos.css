@@ -8,10 +8,14 @@
 }
 
 body {
-  text-transform: capitalize;
+  text-transform: none;
   background-image: url(../img/home_fondo.png);
   background-size: 100%;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, a::first-letter {
+  text-transform: uppercase;
 }
 
 header {
@@ -169,7 +173,7 @@ main .titulo_enlace a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #154360, #FAFAFA, #2874A6, #5DADE2);
+  background: linear-gradient(134deg, #154360, #FAFAFA, #2874A6, #5DADE2);
   background-size: 200% 200%;
   animation: gradiente 5s infinite alternate;
 }
@@ -177,16 +181,16 @@ main .titulo_enlace a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: 2px solid #a7d2f1;
+  border: 2px solid #f3f5f7;
   padding: 20px;
   margin: 10px;
 }
 .promocion .promocion_texto h4 {
   font-size: 2.2rem;
-  font-weight: 900;
-  color: #0056D2; /* 🔥 Naranja vibrante */
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); /* Brillo sutil */
-  letter-spacing: 1px; /* Espaciado para verse más pro */
+  font-weight: 300;
+  color: #FAFAFA;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); /* Brillo sutil */
+  letter-spacing: 0.5px; /* Espaciado para verse más pro */
 }
 .promocion .promocion_texto p {
   font-size: 1.3rem;
@@ -195,7 +199,7 @@ main .titulo_enlace a:hover {
 }
 .promocion .promocion_texto a {
   display: inline-block; /* Para que se comporte como botón */
-  background-color: #5DADE2; /* Color de fondo */
+  background-color: #FF914D;
   color: #FAFAFA; /* Texto en blanco */
   padding: 10px 20px; /* Espaciado interno */
   font-weight: bold;
@@ -204,7 +208,7 @@ main .titulo_enlace a:hover {
   transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .promocion .promocion_texto a:hover {
-  background-color: #2874A6;
+  background-color: #fc6203;
   transform: scale(1.05);
 }
 .promocion ul {
@@ -215,6 +219,7 @@ main .titulo_enlace a:hover {
 }
 .promocion ul li img {
   max-width: 250px;
+  animation: movimiento 1s infinite alternate ease-in-out;
 }
 
 @keyframes gradiente {
@@ -223,6 +228,16 @@ main .titulo_enlace a:hover {
   }
   to {
     background-position: 100% 50%;
+  }
+}
+@keyframes movimiento {
+  from {
+    transform: translateX(0);
+    transform: scale(1);
+  }
+  to {
+    transform: translateX(10px);
+    transform: scale(1.1);
   }
 }
 footer {
