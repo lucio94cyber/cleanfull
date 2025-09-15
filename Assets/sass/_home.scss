@@ -9,11 +9,13 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-         overflow: hidden;
+        overflow: hidden;
+        animation: ingreso 1s  ease-in-out forwards;
 
         img{ 
             max-width: 90vh;
             width: 100%;
+
         }
 
         a{
@@ -188,6 +190,119 @@ main{
     }
 }
 
+.espacios{
+    background-color: v.$colorheader4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    padding: 5px;
+    gap: 10px;
+
+    .habitacion{
+        position: relative;
+        display: grid;
+        justify-items: center;
+        margin: 5px;
+
+    img{
+        width: 100%;
+        height: 500px;
+        box-shadow: 0 0 10px v.$colorheader4;
+    }
+    h5{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.5rem;
+        color: v.$colorheader4;
+        text-shadow: 0px 0px 1px v.$colorheader2;
+        background-color: v.$colorheader3;
+        padding: 15px;
+        border-radius: 20px;
+
+    }
+}
+}
+
+.servicios{
+    background: linear-gradient(135deg, #eee8df, #ffffff, #e1f3ff);
+    background-size: 200% 200%;
+    animation: gradiente 2s infinite alternate;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 150px 1fr;
+    h6{
+        grid-column: 1/4;
+        font-size: 2rem;
+        max-width: 200px;
+        color: v.$colorheader2;
+        font-weight: bold;
+        margin: 10px;
+        text-shadow: 0 0 2px v.$colorheader1;
+    }
+    .tarjeta{
+        display: grid;
+        grid-row: 2/4;
+        max-width: 400px;
+        height: 300px;
+        justify-self: center;
+        background-color: v.$colorheader2;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px v.$colorheader3;
+
+        img{
+            max-width: 70px;
+            filter: brightness(0) invert(1);
+
+        }
+        h5{
+            font-size: 1.5rem;
+            color: v.$colorheader4;
+
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: v.$colorheader4;
+
+        }
+    }
+
+    a{
+        display: grid;
+        grid-column: 1/4;
+        margin:20px;
+        text-decoration: none;
+        background: v.$colorboton1;
+        max-width: 85px;
+        padding: 10px;
+        color: v.$colorheader4;
+        border-radius: 10px;
+        transition: transform 0.5s ease-in-out ;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    a{
+        animation: agranda 0.5s infinite ease-in-out;
+    
+    img{
+        max-width: 30px;
+
+    }
+}
+}
+
 @keyframes gradiente{
     from{
         background-position: 0% 50%;
@@ -209,4 +324,18 @@ main{
         transform: scale(1.1);
 
     }
+}
+
+@keyframes agranda{
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(10deg); }
+  50%  { transform: rotate(-10deg); }
+  75%  { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+
+}
+
+@keyframes ingreso{
+    from{transform:translatey(-100px);opacity: (0);}
+    to{transform: translatey(0px);opacity: (100);}
 }
