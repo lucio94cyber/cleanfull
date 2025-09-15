@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   font-family: "Noto Sans";
@@ -84,6 +85,7 @@ main .titulo_enlace a:hover {
   align-items: center;
   background-color: #FAFAFA;
   background-size: cover;
+  min-height: 100dvh;
 }
 .home2 ul {
   display: flex;
@@ -116,8 +118,10 @@ main .titulo_enlace a:hover {
   display: flex;
   justify-content: space-around;
   gap: 30px;
-  margin: 20px;
   align-items: center;
+  min-height: 100dvh;
+  background-image: url(../img/fondo_compratukit.png);
+  background-size: 100%;
 }
 .compra_tu_kit img {
   width: 100%;
@@ -137,7 +141,7 @@ main .titulo_enlace a:hover {
   text-shadow: 0 0 10px #FAFAFA;
 }
 .compra_tu_kit .tu_kit2 p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #154360;
   text-shadow: 0 0 10px #FAFAFA;
 }
@@ -147,8 +151,8 @@ main .titulo_enlace a:hover {
   flex-direction: column;
   align-items: center;
   background-image: url(../img/fondo_sacamancha.png);
-  background-size: 20%;
-  background-position: center center;
+  background-size: 50%;
+  min-height: 100dvh;
 }
 .saca_mancha img {
   max-width: 200px;
@@ -161,6 +165,66 @@ main .titulo_enlace a:hover {
   border-radius: 1000px;
 }
 
+.promocion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #154360, #FAFAFA, #2874A6, #5DADE2);
+  background-size: 200% 200%;
+  animation: gradiente 5s infinite alternate;
+}
+.promocion .promocion_texto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #a7d2f1;
+  padding: 20px;
+  margin: 10px;
+}
+.promocion .promocion_texto h4 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #0056D2; /* 🔥 Naranja vibrante */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); /* Brillo sutil */
+  letter-spacing: 1px; /* Espaciado para verse más pro */
+}
+.promocion .promocion_texto p {
+  font-size: 1.3rem;
+  color: #3B4B66; /* Texto oscuro para contraste */
+  font-weight: 700;
+}
+.promocion .promocion_texto a {
+  display: inline-block; /* Para que se comporte como botón */
+  background-color: #5DADE2; /* Color de fondo */
+  color: #FAFAFA; /* Texto en blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  font-weight: bold;
+  text-decoration: none; /* Sin subrayado */
+  max-width: 250px;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.promocion .promocion_texto a:hover {
+  background-color: #2874A6;
+  transform: scale(1.05);
+}
+.promocion ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.promocion ul li img {
+  max-width: 250px;
+}
+
+@keyframes gradiente {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
 footer {
   background-color: rgb(223, 223, 223);
   display: flex;

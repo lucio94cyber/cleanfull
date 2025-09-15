@@ -39,6 +39,7 @@ main{
     align-items: center;
     background-color: v.$colorheader4;
     background-size:cover;
+    min-height: 100dvh; // ✅ Esto asegura que cada sección ocupe el alto de la pantalla
     ul{
         display: flex;
         list-style: none;
@@ -73,8 +74,10 @@ main{
     display: flex;
     justify-content: space-around;
     gap: 30px;
-    margin: 20px;
     align-items: center;
+    min-height: 100dvh; // ✅ Esto asegura que cada sección ocupe el alto de la pantalla
+    background-image: url(../img/fondo_compratukit.png);
+    background-size: 100%;
     
     img {
         width:100%;
@@ -96,7 +99,7 @@ main{
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: v.$colorheader3;
             text-shadow: 0 0 10px v.$colorheader4;
         }
@@ -108,8 +111,8 @@ main{
     flex-direction: column;
     align-items: center;
     background-image: url(../img/fondo_sacamancha.png);
-    background-size: 20%;
-    background-position: center center;
+    background-size: 50%;
+    min-height: 100dvh; // ✅ Esto asegura que cada sección ocupe el alto de la pantalla
 
     img{
         max-width: 200px;
@@ -126,5 +129,71 @@ main{
 
 
         }
+    }
+}
+
+.promocion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, v.$colorheader3, v.$colorheader4, v.$colorheader2, v.$colorheader1);
+    background-size: 200% 200%;
+    animation: gradiente 5s infinite alternate;
+    .promocion_texto{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 2px solid #a7d2f1;
+        padding: 20px;
+        margin: 10px;
+        
+        h4{
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #0056D2; /* 🔥 Naranja vibrante */
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); /* Brillo sutil */
+            letter-spacing: 1px; /* Espaciado para verse más pro */
+
+        }
+        p{
+            font-size: 1.3rem;
+            color:#3B4B66; /* Texto oscuro para contraste */
+            font-weight:700;
+
+        }
+        a{
+            display: inline-block; /* Para que se comporte como botón */
+            background-color: v.$colorheader1; /* Color de fondo */
+            color: v.$colorheader4; /* Texto en blanco */
+            padding: 10px 20px; /* Espaciado interno */
+            font-weight: bold;
+            text-decoration: none; /* Sin subrayado */
+            max-width: 250px;
+            transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+            &:hover{
+                background-color: v.$colorheader2; 
+                transform: scale(1.05);
+            }
+        }
+    }
+    ul{list-style: none;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        li{
+            img{max-width: 250px;
+
+            }
+        }
+    }
+}
+
+@keyframes gradiente{
+    from{
+        background-position: 0% 50%;
+
+    }
+    to{
+        background-position: 100% 50%;
     }
 }

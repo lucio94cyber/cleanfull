@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style/estilos.css">
     <link rel="shortcut icon" href="Assets/logo/logo_pestaña.png" type="image/x-icon">
     <title>cleanfull</title>
@@ -39,7 +40,7 @@
     </main>
 
     <section class="home2">
-        <ul>
+        <ul data-aos="flip-up">
             <li><img src="./Assets/img/home_foto1.png" alt="home_foto1">
             <h2>espuma y acción</h2></li>
             <li><img src="./Assets/img/home_foto2.png" alt="home_foto2">
@@ -53,8 +54,8 @@
     </section>
 
     <section class="compra_tu_kit">
-        <img src="./Assets/img/home_foto6.png" alt="home_foto6">
-        <div class="tu_kit2">
+        <img data-aos="flip-down" src="./Assets/img/home_foto6.png" alt="home_foto6">
+        <div class="tu_kit2" data-aos="zoom-in">
         <h3>limpieza profesional para tu hogar y negocio</h3>
         <p>cuidamos cada rincón con productos de calidad y atención al detalle. deja tu espacio en manos expertas y disfruta de un ambiente limpio y fresco.</p>
         </div>
@@ -63,10 +64,24 @@
     <section class="saca_mancha">
         <img src="./Assets/img/nomasmanchas.png" alt="nomasmanchas">
         <div class="limpia_mancha">
-        <img src="./Assets/img/home_7.png" alt="home_7">
-        <img src="./Assets/img/home_8.png" alt="home_8">
-        <img src="./Assets/img/home_9.png" alt="home_9">
+        <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" src="./Assets/img/home_7.png" alt="home_7">
+        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./Assets/img/home_8.png" alt="home_8">
+        <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"src="./Assets/img/home_9.png" alt="home_9">
         </div>
+    </section>
+
+    <section class="promocion">
+        <div class="promocion_texto">
+        <h4>¡ofertas que no se repiten!</h4>
+        <p>renová tu kit de limpieza hoy y ahorrá en grande.</p>
+        <a href="./Assets/pages/productos.html">ver productos destacados</a>
+        </div>
+        <ul>
+            <li><img src="./Assets/img/producto4.png" alt="producto4"></li>
+            <li><img src="./Assets/img/producto5.png" alt="producto5"></li>
+            <li><img src="./Assets/img/producto6.png" alt="producto6"></li>
+        </ul>
+
     </section>
 
     <footer>
@@ -82,5 +97,9 @@
             </a></li>
         </ul>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
