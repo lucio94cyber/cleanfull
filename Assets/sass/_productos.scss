@@ -1,1 +1,65 @@
 @use "variables" as v;
+
+.productos{
+    background-image: url(../img/fondo_producto.png);
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 1fr;
+
+    .tarjeta_producto{
+        background-color: v.$colorheader2;
+        padding: 15px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 2px v.$colorheader4;
+        display: grid;
+        align-content: center;
+        text-align: center;
+
+        img{
+            max-width: 200px;
+            height: 250px;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                filter: saturate(1.2)
+                contrast(1.2);
+                transform: scale(1.1);
+            }
+        }
+        h2{
+            margin: 5px;
+            font-size:0.9rem;
+            color: v.$colorheader4;
+
+        }
+        p{
+            font-size: 0.6rem;
+            color: v.$colorheader4;
+
+        }
+
+    }
+}
+
+.cuotas{
+    display:block;
+    background:linear-gradient(136deg,rgba(97, 77, 77, 0.767),rgb(253, 104, 104),rgb(9, 20, 75));
+    background-size: 200% 200%;
+    animation: gradiente 5s infinite alternate;
+    h3{
+        font-size: 1rem;
+        color: v.$colorheader4;
+        animation: movimientos 8s infinite alternate ease-in-out;
+    }
+}
+
+@keyframes movimientos{
+    from{
+        transform: translateX(0%);
+
+    }
+    to{transform: translateX(100%);
+
+    }
+}

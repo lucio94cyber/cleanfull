@@ -195,14 +195,12 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: 1fr 1fr;
-    padding: 5px;
-    gap: 10px;
+    gap: 5px;
 
     .habitacion{
         position: relative;
         display: grid;
         justify-items: center;
-        margin: 5px;
 
     img{
         width: 100%;

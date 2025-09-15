@@ -228,14 +228,12 @@ main .titulo_enlace a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row: 1fr 1fr;
-  padding: 5px;
-  gap: 10px;
+  gap: 5px;
 }
 .espacios .habitacion {
   position: relative;
   display: grid;
   justify-items: center;
-  margin: 5px;
 }
 .espacios .habitacion img {
   width: 100%;
@@ -367,6 +365,62 @@ main .titulo_enlace a:hover {
   to {
     transform: translatey(0px);
     opacity: 100;
+  }
+}
+.productos {
+  background-image: url(../img/fondo_producto.png);
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+.productos .tarjeta_producto {
+  background-color: #2874A6;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #FAFAFA;
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+.productos .tarjeta_producto img {
+  max-width: 200px;
+  height: 250px;
+  transition: all 0.2s ease-in-out;
+}
+.productos .tarjeta_producto img:hover {
+  filter: saturate(1.2) contrast(1.2);
+  transform: scale(1.1);
+}
+.productos .tarjeta_producto h2 {
+  margin: 5px;
+  font-size: 0.9rem;
+  color: #FAFAFA;
+}
+.productos .tarjeta_producto p {
+  font-size: 0.6rem;
+  color: #FAFAFA;
+}
+
+.cuotas {
+  display: block;
+  background: linear-gradient(136deg, rgba(97, 77, 77, 0.767), rgb(253, 104, 104), rgb(9, 20, 75));
+  background-size: 200% 200%;
+  animation: gradiente 5s infinite alternate;
+}
+.cuotas h3 {
+  font-size: 1rem;
+  color: #FAFAFA;
+  animation: movimientos 8s infinite alternate ease-in-out;
+}
+
+@keyframes movimientos {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 footer {
