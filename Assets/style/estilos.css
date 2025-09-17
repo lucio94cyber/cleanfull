@@ -310,6 +310,57 @@ main .titulo_enlace a:hover {
   transform: scale(1.1);
 }
 
+.formulario {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FAFAFA;
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 20px;
+}
+.formulario form label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.formulario form input {
+  max-width: 300px;
+  height: 40px;
+}
+.formulario form textarea {
+  max-width: 300px;
+  height: 50px;
+}
+.formulario form .enviar_reset {
+  margin: 10px;
+}
+.formulario form .enviar_reset input {
+  width: 90px;
+  border-radius: 10px;
+  background-image: url(../img/boton1.png);
+  background-position: center;
+  background-size: cover;
+  color: #FAFAFA;
+  font-size: 1rem;
+  font-weight: 900;
+  text-shadow: 0 0 10px black;
+  transition: transform 0.5s ease-in-out;
+}
+.formulario form .enviar_reset input:hover {
+  transform: scale(1.1);
+  background-image: url(../img/boton2.png);
+}
+.formulario .formulario_fotos img {
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -371,13 +422,13 @@ main .titulo_enlace a:hover {
   background-image: url(../img/fondo_producto.png);
   background-size: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
 }
 .productos .tarjeta_producto {
   background-color: #2874A6;
-  padding: 15px;
-  margin: 20px;
+  padding: 10px;
+  margin: 30px;
   border-radius: 10px;
   box-shadow: 0 0 2px #FAFAFA;
   display: grid;
@@ -385,6 +436,7 @@ main .titulo_enlace a:hover {
   text-align: center;
 }
 .productos .tarjeta_producto img {
+  margin: 0 auto;
   max-width: 200px;
   height: 250px;
   transition: all 0.2s ease-in-out;
