@@ -54,6 +54,16 @@ header .redes li img {
   filter: contrast(0.5);
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  header {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+  }
+  header .paginas li a {
+    font-size: 1rem;
+  }
+}
 main {
   display: flex;
   justify-content: center;
@@ -84,6 +94,16 @@ main .titulo_enlace a:hover {
   filter: brightness(1.1) contrast(1.1) saturate(1.1);
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  main .titulo_enlace {
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  main .titulo_enlace img {
+    width: 100vw;
+  }
+}
 .home2 {
   display: flex;
   justify-content: center;
@@ -119,6 +139,19 @@ main .titulo_enlace a:hover {
   font-weight: 400;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .home2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .home2 ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .home2 ul li h2 {
+    font-size: 1.5rem;
+  }
+}
 .compra_tu_kit {
   display: flex;
   justify-content: space-around;
@@ -151,6 +184,26 @@ main .titulo_enlace a:hover {
   text-shadow: 0 0 10px #FAFAFA;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .compra_tu_kit {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: center;
+    background-size: cover;
+  }
+  .compra_tu_kit img {
+    max-width: 250px;
+  }
+  .compra_tu_kit .tu_kit2 h3 {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .compra_tu_kit .tu_kit2 p {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+}
 .saca_mancha {
   display: flex;
   flex-direction: column;
@@ -170,6 +223,11 @@ main .titulo_enlace a:hover {
   border-radius: 1000px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .saca_mancha {
+    background-size: cover;
+  }
+}
 .promocion {
   display: flex;
   justify-content: center;
@@ -212,17 +270,28 @@ main .titulo_enlace a:hover {
   background-color: #fc6203;
   transform: scale(1.05);
 }
-.promocion ul {
+.promocion .promocionimagen {
   list-style: none;
   display: flex;
   gap: 30px;
   align-items: center;
 }
-.promocion ul li img {
+.promocion .promocionimagen li img {
   max-width: 250px;
   animation: movimiento 1s infinite alternate ease-in-out;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .promocion {
+    display: flex;
+    flex-direction: column;
+  }
+  .promocionimagen li img {
+    margin: -5px;
+    padding: 10px;
+    width: 100px;
+  }
+}
 .espacios {
   background-color: #FAFAFA;
   display: grid;
@@ -253,6 +322,15 @@ main .titulo_enlace a:hover {
   border-radius: 20px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .espacios .habitacion img {
+    height: 150px;
+  }
+  .espacios .habitacion h5 {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+}
 .servicios {
   background: linear-gradient(135deg, #eee8df, #ffffff, #e1f3ff);
   background-size: 200% 200%;
@@ -310,6 +388,27 @@ main .titulo_enlace a:hover {
   transform: scale(1.1);
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .servicios {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicios h6 {
+    font-size: 2.5rem;
+  }
+  .servicios .tarjeta {
+    margin: 20px;
+  }
+  .servicios .tarjeta img {
+    width: 50px;
+  }
+  .servicios .tarjeta h5 {
+    font-size: 1.2rem;
+  }
+  .servicios .tarjeta p {
+    font-size: 1rem;
+  }
+}
 .formulario {
   display: flex;
   justify-content: space-around;
@@ -361,6 +460,22 @@ main .titulo_enlace a:hover {
   border-radius: 50px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .formulario form {
+    gap: 10px;
+  }
+  .formulario .formulario_fotos img {
+    padding: 10px;
+    border-radius: 0;
+    width: 95px;
+    height: 150px;
+  }
+}
 .whatsapp {
   position: fixed;
   bottom: 20px;

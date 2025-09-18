@@ -41,3 +41,17 @@ header{
             }
         }
     }
+
+@media (min-width: 320px) and (max-width: 430px){
+    header{
+        display: flex;
+        justify-content:left;
+        gap: 20px;
+        .paginas{
+            li{
+                a{font-size: 1rem;
+                }
+            }
+        }
+    }
+}

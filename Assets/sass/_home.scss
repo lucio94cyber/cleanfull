@@ -35,6 +35,21 @@ main{
 }
 }
 
+@media (min-width: 320px) and (max-width: 430px){
+    main{
+
+        .titulo_enlace{
+            align-items: center;
+            padding: 20px;
+            margin-top: 20px;
+        img{
+            width: 100vw;
+
+        }
+    }
+}
+}
+
 .home2{
     display: flex;
     justify-content: center;
@@ -72,6 +87,24 @@ main{
         }
     }
 
+@media (min-width: 320px) and (max-width: 430px){
+    .home2{
+        display: flex;
+        flex-direction: column;
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+
+                h2{
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+    }
+}
+
 .compra_tu_kit {
     display: flex;
     justify-content: space-around;
@@ -108,6 +141,34 @@ main{
     }
 }
 
+@media (min-width: 320px) and (max-width: 430px){
+    .compra_tu_kit{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+        align-items: center;
+        background-size: cover;
+
+        img{
+            max-width: 250px;
+
+        }
+        .tu_kit2{
+
+            h3{
+                padding: 10px;
+                font-size: 2rem;
+
+            }
+            p{
+                padding: 10px;
+                font-size: 1.5rem;
+
+            }
+        }
+    }
+}
+
 .saca_mancha{
     display: flex;
     flex-direction: column;
@@ -131,6 +192,12 @@ main{
 
 
         }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 430px){
+    .saca_mancha{
+        background-size: cover;
     }
 }
 
@@ -178,13 +245,31 @@ main{
             }
         }
     }
-    ul{list-style: none;
+    .promocionimagen{list-style: none;
         display: flex;
         gap: 30px;
         align-items: center;
         li{
             img{max-width: 250px;
                 animation: movimiento 1s infinite alternate ease-in-out;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 430px){
+    .promocion{
+        display: flex;
+        flex-direction: column;
+    }
+    .promocionimagen{
+
+        li{
+            img{
+                margin: -5px;
+                padding: 10px;
+                width: 100px;
+
             }
         }
     }
@@ -221,6 +306,24 @@ main{
 
     }
 }
+}
+@media (min-width: 320px) and (max-width: 430px){
+    .espacios{
+
+        .habitacion{
+
+            img{
+                height: 150px;
+
+            }
+
+            h5{
+                font-size: 0.7rem;
+                padding: 5px;
+
+            }
+        }
+    }
 }
 
 .servicios{
@@ -284,6 +387,36 @@ main{
         }
     }
 }
+@media (min-width: 320px) and (max-width: 430px){
+    .servicios{
+        display: flex;
+        flex-direction: column;
+
+        h6{
+            font-size: 2.5rem;
+
+        }
+        .tarjeta{
+            margin: 20px;
+            
+
+            img{
+                width: 50px;
+
+            }
+            h5{
+                font-size: 1.2rem;
+
+            }
+            p{
+                font-size: 1rem;
+
+            }
+        }
+    }
+
+}
+
 
 .formulario{
     display: flex;
@@ -349,6 +482,25 @@ main{
     }
 }
 
+@media (min-width: 320px) and (max-width: 430px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        form{
+            gap: 10px;
+        }
+        .formulario_fotos{
+            img{
+                padding: 10px;
+                border-radius: 0;
+                width: 95px;
+                height: 150px;
+            }
+        }
+    }
+}
+
 .whatsapp{
     position: fixed;
     bottom: 20px;
@@ -363,6 +515,7 @@ main{
     }
 }
 }
+
 
 @keyframes gradiente{
     from{
