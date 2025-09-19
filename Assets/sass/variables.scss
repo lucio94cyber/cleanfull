@@ -18,10 +18,23 @@ $colorboton2: #fc6203;
 body{
     text-transform:none;
     background-image: url(../img/home_fondo.png);
-    background-size: 100%;
+    background-size: 120%;
     overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6,p,a::first-letter{
         text-transform: uppercase;
     }
+
+@media (min-width: 320px) and (max-width: 430px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  body{
+    background-size: 300%;
+  }
+}

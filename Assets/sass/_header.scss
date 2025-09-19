@@ -45,8 +45,10 @@ header{
 @media (min-width: 320px) and (max-width: 430px){
     header{
         display: flex;
-        justify-content:left;
-        gap: 20px;
+        justify-content:center;
+        gap: 10px;
+        padding: 10px;
+        flex-direction: column-reverse;
         .paginas{
             li{
                 a{font-size: 1rem;
