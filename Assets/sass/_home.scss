@@ -511,27 +511,16 @@ main{
     right: 20px;
 
     a{
-        animation: agranda 0.5s infinite ease-in-out;
+        display: inline-block;
+        animation: agrando 0.5s infinite ease-in-out;
     
-    img{
-        max-width: 30px;
-
-    }
-}
-}
-
-@media (min-width: 320px) and (max-width: 430px) {
-  .whatsapp {
-    bottom: 10px;   /* más cerca del borde para móviles */
-    right: 10px;
-    z-index: 9999;  /* asegura que esté por encima de todo */
-
     img{
         max-width: 45px;
 
     }
-  }
 }
+}
+
 
 @keyframes gradiente{
     from{
@@ -556,7 +545,7 @@ main{
     }
 }
 
-@keyframes agranda{
+@keyframes agrando{
   0%   { transform: rotate(0deg); }
   25%  { transform: rotate(10deg); }
   50%  { transform: rotate(-10deg); }
