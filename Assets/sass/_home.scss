@@ -197,6 +197,10 @@ main{
 
 @media (min-width: 320px) and (max-width: 430px){
     .saca_mancha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         background-size: cover;
     }
 }
@@ -516,6 +520,18 @@ main{
 }
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .whatsapp {
+    bottom: 10px;   /* más cerca del borde para móviles */
+    right: 10px;
+    z-index: 9999;  /* asegura que esté por encima de todo */
+
+    img{
+        max-width: 45px;
+
+    }
+  }
+}
 
 @keyframes gradiente{
     from{
