@@ -42,7 +42,7 @@ header .paginas {
 }
 header .paginas li a {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
   color: #2874A6;
@@ -74,7 +74,7 @@ header .redes li img {
     flex-direction: column-reverse;
   }
   header .paginas li a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 main {

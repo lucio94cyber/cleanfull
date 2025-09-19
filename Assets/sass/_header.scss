@@ -14,7 +14,7 @@ header{
         li{
             a{
                 display: inline-block;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 text-decoration: none;
                 font-weight: bold;
                 color: v.$colorheader2;
@@ -51,7 +51,7 @@ header{
         flex-direction: column-reverse;
         .paginas{
             li{
-                a{font-size: 1rem;
+                a{font-size: 1.2rem;
                 }
             }
         }
