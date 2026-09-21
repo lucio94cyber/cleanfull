@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Kit de limpieza con escurridor y repuestos",
+    "description": "Kit completo para lavar y escurrir pisos con practicidad.",
+    "category": "Kit para pisos",
+    "image": "producto1.png"
+  },
+  {
+    "id": 2,
+    "name": "Paños de microfibra",
+    "description": "Paños reutilizables para secar y limpiar superficies sin dejar pelusa.",
+    "category": "Microfibra",
+    "image": "producto2.png"
+  },
+  {
+    "id": 3,
+    "name": "Balde plástico",
+    "description": "Balde resistente para agua y soluciones de limpieza.",
+    "category": "Accesorios",
+    "image": "producto3.png"
+  },
+  {
+    "id": 4,
+    "name": "Plumero de plumas blancas",
+    "description": "Ideal para quitar polvo de muebles, objetos y rincones altos.",
+    "category": "Accesorios",
+    "image": "producto4.png"
+  },
+  {
+    "id": 5,
+    "name": "Escoba de cerdas plásticas",
+    "description": "Escoba práctica para polvo y suciedad de uso diario.",
+    "category": "Accesorios",
+    "image": "producto5.png"
+  },
+  {
+    "id": 6,
+    "name": "Trapeador con balde escurridor",
+    "description": "Sistema práctico para una limpieza profunda de pisos.",
+    "category": "Kit para pisos",
+    "image": "producto6.png"
+  },
+  {
+    "id": 7,
+    "name": "Plumero de plumas oscuras",
+    "description": "Captura polvo fino en superficies y objetos delicados.",
+    "category": "Accesorios",
+    "image": "producto7.png"
+  },
+  {
+    "id": 8,
+    "name": "Detergente líquido",
+    "description": "Para lavar vajilla y ayudar a remover suciedad y grasa.",
+    "category": "Limpieza",
+    "image": "producto8.png"
+  },
+  {
+    "id": 9,
+    "name": "Esponjas con fibra abrasiva",
+    "description": "Para utensilios y suciedad difícil en superficies resistentes.",
+    "category": "Limpieza",
+    "image": "producto9.png"
+  },
+  {
+    "id": 10,
+    "name": "Suavizante / detergente para ropa",
+    "description": "Opciones para acompañar el lavado y cuidado de prendas.",
+    "category": "Limpieza",
+    "image": "producto10.png"
+  }
+]

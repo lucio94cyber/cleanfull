@@ -1,160 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/style/estilos.css">
-    <link rel="shortcut icon" href="Assets/logo/logo_pestaña.png" type="image/x-icon">
-    <title>cleanfull</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cleanfull — soluciones de limpieza para hogares, comercios y espacios de trabajo.">
+  <meta name="theme-color" content="#0a3150">
+  <link rel="icon" href="./Assets/logo/logo_pestaña.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/css/estilos.css">
+  <title>Cleanfull | Limpieza que se nota</title>
 </head>
 <body>
-    <header>
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Cleanfull inicio">
+        <img src="./Assets/logo/logo.png" alt="Cleanfull">
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#soluciones">Soluciones</a>
+        <a href="#productos">Productos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-whatsapp" href="https://wa.me/5491164227116" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
 
-
-        <ul class="paginas">
-            <li><a href="./index.html">inicio</a></li>
-            <li><a href="./Assets/pages/productos.html">productos</a></li>
-        </ul>
-
-        <ul class="redes">
-            <li><a href="https://www.instagram.com/accounts/login/#">
-                <img src="./Assets/img/instagram.png" alt="instagram">
-            </a></li>
-            <li><a href="https://x.com/iniciarsesion?lang=es">
-                <img src="./Assets/img/twiter.png" alt="twitter">
-            </a></li>
-            <li><a href="https://www.facebook.com/login/?locale=es_LA">
-                <img src="./Assets/img/facebook.png" alt="facebook">
-            </a></li>
-        </ul>
-
-    </header>
-
-    <main>
-        <div class="titulo_enlace">
-        <img src="./Assets/logo/logo.png" alt="logo">
-        <a href="./Assets/pages/productos.html">nuestros productos</a>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">LIMPIEZA • HOGAR • NEGOCIOS</span>
+        <h1>La limpieza también puede sentirse <em>profesional.</em></h1>
+        <p>Productos y soluciones pensadas para que cada espacio se vea, se sienta y funcione mejor.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#productos">Ver productos</a>
+          <a class="btn btn-ghost" href="#soluciones">Conocé Cleanfull <span>↓</span></a>
         </div>
-    </main>
-
-    <section class="home2">
-        <ul data-aos="flip-up">
-            <li><img src="./Assets/img/home_foto1.png" alt="home_foto1">
-            <h2>espuma y acción</h2></li>
-            <li><img src="./Assets/img/home_foto2.png" alt="home_foto2">
-            <h2>pulveriza y brilla</h2></li>
-            <li><img src="./Assets/img/home_foto3.png" alt="home_foto3">
-            <h2>poder de limpieza</h2></li>
-            <li><img src="./Assets/img/home_foto4.png" alt="home_foto4">
-            <h2>desinfecta al instante</h2></li>
-        </ul>
-
+        <div class="hero-proof"><strong>10+</strong><span>productos disponibles</span><strong>3</strong><span>formas de comprar</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <img src="./Assets/img/home_foto6.png" alt="Productos Cleanfull para limpieza">
+        <div class="hero-card"><span>01</span><strong>Tu espacio, en otro nivel.</strong><small>Soluciones para todos los días.</small></div>
+      </div>
     </section>
 
-    <section class="compra_tu_kit">
-        <img data-aos="flip-down" src="./Assets/img/home_foto6.png" alt="home_foto6">
-        <div class="tu_kit2" data-aos="zoom-in">
-        <h3>limpieza profesional para tu hogar y negocio</h3>
-        <p>cuidamos cada rincón con productos de calidad y atención al detalle. deja tu espacio en manos expertas y disfruta de un ambiente limpio y fresco.</p>
-        </div>
-    </section>
-    
-    <section class="saca_mancha">
-        <img src="./Assets/img/nomasmanchas.png" alt="nomasmanchas">
-        <div class="limpia_mancha">
-        <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" src="./Assets/img/home_7.png" alt="home_7">
-        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./Assets/img/home_8.png" alt="home_8">
-        <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"src="./Assets/img/home_9.png" alt="home_9">
-        </div>
+    <section class="intro-strip" id="soluciones">
+      <div><span class="eyebrow">POR QUÉ CLEANFULL</span><h2>Menos vueltas.<br><span>Más resultados.</span></h2></div>
+      <p>Desde una limpieza rápida hasta espacios que requieren una atención más profunda, reunimos productos y servicios para que encuentres lo que necesitás sin complicarte.</p>
     </section>
 
-    <section class="promocion">
-        <div class="promocion_texto">
-        <h4>¡ofertas que no se repiten!</h4>
-        <p>renová tu kit de limpieza hoy y ahorrá en grande.</p>
-        <a href="./Assets/pages/productos.html">ver productos destacados</a>
-        </div>
-        <ul class="promocionimagen">
-            <li><img src="./Assets/img/producto4.png" alt="producto4"></li>
-            <li><img src="./Assets/img/producto5.png" alt="producto5"></li>
-            <li><img src="./Assets/img/producto6.png" alt="producto6"></li>
-        </ul>
-
+    <section class="feature-grid">
+      <article class="feature-card feature-dark"><span>01</span><div><h3>Espuma y acción</h3><p>Herramientas y productos para resolver la limpieza cotidiana con practicidad.</p></div><img src="./Assets/img/home_foto1.png" alt="Limpieza del hogar"></article>
+      <article class="feature-card"><span>02</span><div><h3>Brillo visible</h3><p>Microfibras, accesorios y soluciones pensadas para cada superficie.</p></div><img src="./Assets/img/home_foto2.png" alt="Superficie limpia"></article>
+      <article class="feature-card feature-image"><img src="./Assets/img/home_foto3.png" alt="Limpieza profesional"><div class="overlay"><span>03</span><h3>Poder de limpieza</h3></div></article>
     </section>
 
-    <section class="espacios">
-        <div class="habitacion"><img src="./Assets/img/espacio1.png" alt="espacio1"><h5>habitacion</h5></div>
-        <div class="habitacion"><img src="./Assets/img/espacio2.png" alt="espacio2"><h5>baño</h5></div>
-        <div class="habitacion"><img src="./Assets/img/espacio3.png" alt="espacio3"><h5>living</h5></div>
-        <div class="habitacion"><img src="./Assets/img/espacio4.png" alt="espacio4"><h5>cocina</h5></div>
+    <section class="stain-section">
+      <div class="stain-copy"><span class="eyebrow">PARA LOS PROBLEMAS REALES</span><h2>Cuando una mancha aparece, <span>Cleanfull responde.</span></h2><p>Soluciones prácticas para el día a día, con herramientas que acompañan cada tarea y hacen que limpiar sea más simple.</p><a href="#productos" class="text-link">Explorar soluciones <span>→</span></a></div>
+      <div class="stain-gallery"><img src="./Assets/img/home_7.png" alt="Solución de limpieza"><img src="./Assets/img/home_8.png" alt="Producto Cleanfull"><img src="./Assets/img/home_9.png" alt="Limpieza de superficies"></div>
     </section>
 
-    <section class="servicios">
-        <h6>nuestros servicios</h6>
-        <div class="tarjeta">
-            <img src="./Assets/img/express.png" alt="express">
-                <h5>Limpieza Express</h5>
-                    <p>Ideal para departamentos pequeños o limpiezas rápidas de última hora.</p>
-        </div>
-        <div class="tarjeta">
-            <img src="./Assets/img/industrial.png" alt="industrial">
-                <h5>Limpieza Industrial</h5>
-                    <p>Para fábricas, depósitos o grandes espacios que necesitan desinfección profunda.</p>
-        </div>
-        <div class="tarjeta">
-            <img src="./Assets/img/tienda.png" alt="tienda">
-                <h5>tienda online</h5>
-                    <p>Productos de limpieza con entrega en el día. Comprá desde tu casa.</p>
-        </div>
-
-        <a href="https://wa.me/5491164227116" target="_blank">Contacto</a>
+    <section class="products-section" id="productos">
+      <div class="section-heading"><div><span class="eyebrow">CATÁLOGO</span><h2>Elegí tu solución.</h2></div><p>Productos seleccionados para limpieza cotidiana, mantenimiento y espacios de trabajo.</p></div>
+      <div class="product-tools"><div class="filters" id="filters"></div><span class="cart-status" id="cartStatus">0 productos</span></div>
+      <div class="product-grid" id="productGrid"><div class="loading">Cargando productos…</div></div>
     </section>
 
-    <section class="formulario">
-        <form>
-            <label>Nombre y Apellido</label>
-            <input type="text" name="cliente" placeholder="Cual es tu nombre y apellido?" required>
-            <label>Telefono</label>
-            <input type="number" name="telefono" placeholder="Tu numero de telefono?" required>
-            <label>Mensaje</label>
-            <textarea name="mensaje" placeholder="En que te podes ayudar?" required></textarea>
-
-            <div class="enviar_reset">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Reset">
-            </div>
-        </form>
-        
-        <div class="formulario_fotos">
-            <img src="./Assets/img/formulario1.png" alt="formulario1">
-            <img src="./Assets/img/formulario2.png" alt="formulario2">
-            <img src="./Assets/img/formulario3.png" alt="formulario3">
-        </div>
+    <section class="spaces-section">
+      <div class="section-heading light"><div><span class="eyebrow">PARA CADA ESPACIO</span><h2>Una solución donde la necesitás.</h2></div><p>Hogar, baño, cocina o living: la limpieza cambia de espacio, no de objetivo.</p></div>
+      <div class="spaces-grid">
+        <article><img src="./Assets/img/espacio1.png" alt="Habitación limpia"><span>01 / Habitación</span></article>
+        <article><img src="./Assets/img/espacio2.png" alt="Baño limpio"><span>02 / Baño</span></article>
+        <article><img src="./Assets/img/espacio3.png" alt="Living limpio"><span>03 / Living</span></article>
+        <article><img src="./Assets/img/espacio4.png" alt="Cocina limpia"><span>04 / Cocina</span></article>
+      </div>
     </section>
 
-     <section class="whatsapp">
-        <a href="https://wa.me/5491164227116" target="_blank">
-        <img src="./Assets/img/Whatsapp.png" alt="Whatsapp">
-        </a>
+    <section class="services-section" id="servicios">
+      <div class="section-heading"><div><span class="eyebrow">SERVICIOS</span><h2>También pensamos en tu operación.</h2></div><p>Alternativas para hogares, comercios y espacios de mayor escala.</p></div>
+      <div class="service-grid">
+        <article><img src="./Assets/img/express.png" alt="Limpieza Express"><span>01</span><h3>Limpieza Express</h3><p>Para departamentos, oficinas y limpiezas rápidas de última hora.</p></article>
+        <article><img src="./Assets/img/industrial.png" alt="Limpieza Industrial"><span>02</span><h3>Limpieza Industrial</h3><p>Para depósitos, fábricas y espacios que necesitan una atención profunda.</p></article>
+        <article><img src="./Assets/img/tienda.png" alt="Tienda online"><span>03</span><h3>Tienda online</h3><p>Armá tu pedido y consultá disponibilidad directamente con Cleanfull.</p></article>
+      </div>
     </section>
 
-    <footer>
-        <ul class="footer_redes">
-            <li><a href="https://www.instagram.com/accounts/login/#">
-                <img src="./Assets/img/instagram.png" alt="instagram">
-            </a></li>
-            <li><a href="https://x.com/iniciarsesion?lang=es">
-                <img src="./Assets/img/twiter.png" alt="twitter">
-            </a></li>
-            <li><a href="https://www.facebook.com/login/?locale=es_LA">
-                <img src="./Assets/img/facebook.png" alt="facebook">
-            </a></li>
-        </ul>
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <section class="contact-section" id="contacto">
+      <div class="contact-copy"><span class="eyebrow">HABLEMOS</span><h2>¿Qué necesitás limpiar?</h2><p>Contanos qué estás buscando y te ayudamos a encontrar la solución adecuada.</p><a class="btn btn-primary" href="https://wa.me/5491164227116" target="_blank" rel="noopener">Escribir por WhatsApp</a></div>
+      <div class="contact-images"><img src="./Assets/img/formulario1.png" alt="Limpieza Cleanfull"><img src="./Assets/img/formulario2.png" alt="Productos de limpieza"><img src="./Assets/img/formulario3.png" alt="Limpieza profesional"></div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">TU PEDIDO</span><h2>Carrito</h2></div><button id="closeCart" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty-cart">Todavía no agregaste productos.</p></div>
+    <div class="cart-footer"><div><span>Productos</span><strong id="cartCount">0</strong></div><a class="btn btn-primary" id="whatsappOrder" href="https://wa.me/5491164227116" target="_blank" rel="noopener">Pedir por WhatsApp</a></div>
+  </aside>
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <button class="floating-cart" id="openCart" aria-label="Abrir carrito"><span>🛒</span><b id="cartBadge">0</b></button>
+
+  <footer>
+    <div class="footer-top"><a class="brand" href="#inicio"><img src="./Assets/logo/logo.png" alt="Cleanfull"></a><p>Limpieza que se nota.<br>Soluciones para todos los días.</p><a class="footer-link" href="https://wa.me/5491164227116" target="_blank" rel="noopener">+54 9 11 6422-7116 →</a></div>
+    <div class="footer-bottom"><span>© 2026 Cleanfull</span><a href="#inicio">Volver arriba ↑</a></div>
+  </footer>
+  <script src="./Assets/js/app.js" defer></script>
 </body>
 </html>
